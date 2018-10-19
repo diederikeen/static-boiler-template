@@ -19,4 +19,4 @@ Images do minify on the ```build``` command but not in the ```watch``` command. 
 
 It's up-to-date with the latest webpack 4.17. You can use es6. Styling syntax is SCSS. Both the styling + JavaScript get compiled and minified on the ```build``` function.
 
-For HTML I use html-includes. This way it's easier to work with modules/components. Make sure you use ```_``` to prefix modules/components so it won't compile to the ```build``` dir. Include components like this: ```${require('./path/to/_partial.html')};
+For HTML I use html-includes. This way it's easier to work with modules/components. Make sure you use ```_``` to prefix modules/components so it won't compile to the ```build``` dir. Include components like this: ```${require('./path/to/_partial.html')};```
