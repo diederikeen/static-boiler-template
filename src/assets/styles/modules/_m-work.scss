@@ -1,0 +1,59 @@
+.m-work {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &__title {
+    
+    @include breakpoint($bp-laptop) {
+      font-size: 52px;
+      margin: 0 0 18px;
+    }
+  }
+
+  &__intro {
+    margin: 0 0 56px;
+    font-size: 24px;
+    line-height: 38px;
+    max-width: 720px;
+    color: $grey;
+  }
+
+  &__list {
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      padding: 18px 18px 18px 24px;
+      border-bottom: 2px rgba(lightsteelblue, .4) solid;
+
+      &:first-child {
+        border-top: 2px rgba(lightsteelblue, .4) solid;
+      }
+    }
+    
+    a {
+      @include BodySemiBold;
+      font-size: 32px;
+      color: $primary-color;
+      margin: 0 0 4px;
+      display: block;
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+
+    p {
+      font-size: 24px;
+      margin: 0;
+      color: rgba($black, .5);
+
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+}

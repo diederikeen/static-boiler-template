@@ -2,8 +2,13 @@
   * Define your variables here
 */
 
-$black: #333;
+// $black: #333;
+$black: #191a2f;
+// $grey: #191a2f;
+$grey: #484a66;
 $white: #fff;
+
+$primary-color: blue;
 
 // Breakpoints used for breakpoint mixin
 $bp-mobile: 480;
@@ -21,4 +26,4 @@ $s-fast: 125ms;
 $s-medium: 250ms;
 $s-slow: 500ms;
 
-$f-body: 'Heebo-Light';
+$f-body: 'SourceSance-Regular';

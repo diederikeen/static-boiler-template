@@ -1,0 +1,59 @@
+.m-lead {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 0 72px;
+
+  @include breakpoint($bp-desktop-xlarge) {
+    padding: 0 0 148px;
+  }
+
+  @include breakpoint($bp-desktop-xlarge) {
+    padding: 0 0 248px;
+  }
+
+  &__title {
+    color: $black;
+    
+    @include breakpoint($bp-laptop) {
+      font-size: 64px;
+      line-height: 76px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 0 24px;
+    color: $grey;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    a {
+      @include BodySemiBold;
+      color: $primary-color;
+    }
+
+    @include breakpoint($bp-laptop) {
+      font-size: 24px;
+      line-height: 32px;
+      max-width: 720px;
+    }
+  }
+
+  &__logo {
+    @include BodyBold;
+    position: relative;
+    top: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: $primary-color;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

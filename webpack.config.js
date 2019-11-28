@@ -6,6 +6,6 @@ module.exports = {
   entry: './src/assets/js/index.js',
   output: {
     path: path.resolve(__dirname, 'dist/assets/js'),
-    filename: 'app.js'
-  }
-}
+    filename: 'app.js',
+  },
+};

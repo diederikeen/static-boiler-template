@@ -2,6 +2,10 @@
   * Vendor styles
 */
 @import './vendor/normalize';
+@import '../../../node_modules/dload-lazyload/src/styles/variables';
+$dload-delays: 100 200 300 400 500 600 900;
+$dload-transition-speed: 1400ms;
+@import '../../../node_modules/dload-lazyload/src/styles/dload-lazyload';
 
 /*
   * Global styles
@@ -18,7 +22,11 @@
 /*
   * Module styles
 */
-@import './modules/test-module';
+@import './modules/m-container';
+@import './modules/m-lead';
+@import './modules/m-nav';
+@import './modules/m-work';
+@import './modules/m-about';
 
 /*
   * State styles

@@ -18,3 +18,63 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'LibreBaskerville-Regular';
+  src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville-Bold';
+  src: url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-SemiBold';
+  src: url('../fonts/SourceSansPro-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  src: url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin TitleRegular {
+  font-family: 'LibreBaskerville-Regular';
+  font-weight: 300;
+}
+
+@mixin TitleBold {
+  font-family: 'LibreBaskerville-Bold';
+  font-weight: 300;
+}
+
+@mixin BodyRegular {
+  font-family: 'SourceSansPro-Regular';
+  font-weight: 300;
+}
+
+@mixin BodySemiBold {
+  font-family: 'SourceSansPro-SemiBold';
+  font-weight: 300;
+}
+
+@mixin BodyBold {
+  font-family: 'SourceSansPro-Bold';
+  font-weight: 300;
+}

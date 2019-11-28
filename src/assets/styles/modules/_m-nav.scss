@@ -1,0 +1,73 @@
+.m-nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 720px;
+  height: 380px;
+  // background: lightgray;
+  @include BodySemiBold;
+  z-index: 9;
+
+  @include breakpoint($bp-desktop-large) {
+    top: 180px;
+    right: 100px;
+  }
+
+  @include breakpoint(1800) {
+    right: 180px;
+  }
+
+  a {
+    position: absolute;
+    display: inline-block;
+    color: transparent;
+    font-size: 18px;
+    padding: 8px 24px;
+    transform: scale(0.9);
+    animation: animateBG 4s linear infinite;
+
+    @include breakpoint($bp-desktop-large) {
+      padding: 14px 36px;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  a:first-child {
+    top: 140px;
+    left: 64px;
+  }
+
+  a:nth-child(2) {
+    top: 280px;
+    left: 332px;
+    animation-delay: 2s;
+    background: rgba($primary-color,.025);
+  }
+
+  a:nth-child(3) {
+    top: 44px;
+    right: 80px;
+    animation-delay: 3s;
+    background: rgba($primary-color,.025);
+  }
+}
+
+@keyframes animateBG {
+  0% {
+    background: rgba($primary-color,.015);
+    transform: scale(0.9);
+  }
+
+  50% {
+    background: rgba($primary-color,.075);
+    transform: scale(1);
+  }
+
+  100% {
+    background: rgba($primary-color,.015);
+    transform: scale(0.9);
+  }
+}
